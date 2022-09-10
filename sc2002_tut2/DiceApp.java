@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class DiceApp {
 
 	public static void main(String[] args) {
+		// alternatively you can create 1 dice to save memory space
+		// consider event where you got 100 dice
 		Dice d1 = new Dice();
 		Dice d2 = new Dice();
 		Scanner sc = new Scanner(System.in);
