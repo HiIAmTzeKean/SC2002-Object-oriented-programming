@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class P2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int salary = 0;
 		int merit = 0;
 		Scanner sc = new Scanner(System.in);
