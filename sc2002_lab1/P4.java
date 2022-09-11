@@ -5,12 +5,11 @@ import java.util.Scanner;
 public class P4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
 		int height = sc.nextInt();
 		int alpha = 1;
-		
+		sc.close();
 		if (height == 0) {
 			System.out.println("Error Input!!");
 			return;
@@ -29,7 +28,7 @@ public class P4 {
 			}
 			System.out.print("\n");
 		}
-		sc.close();
+		
 	}
 
 }
