@@ -1,6 +1,6 @@
 package tutorials.sc2002_tut2;
 
-public class Circle {
+class Circle {
 	private double radius;
 	private static final double PI = 3.14159;
 	
