@@ -1,4 +1,4 @@
-package sc2002_tut3;
+package tutorials.sc2002_tut3;
 
 public class VendingMachineApp {
 	public static void main (String [] arg) {

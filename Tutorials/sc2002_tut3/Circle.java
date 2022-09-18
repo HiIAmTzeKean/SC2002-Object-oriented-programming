@@ -1,4 +1,4 @@
-package sc2002_tut3;
+package tutorials.sc2002_tut3;
 
 public class Circle extends Point {
     private int radius;

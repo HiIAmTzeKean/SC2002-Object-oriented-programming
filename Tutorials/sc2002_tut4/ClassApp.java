@@ -1,4 +1,4 @@
-package sc2002_tut4;
+package tutorials.sc2002_tut4;
 
 public class ClassApp {
     public static void main(String arg []) {

@@ -1,4 +1,4 @@
-package sc2002_tut2;
+package tutorials.sc2002_tut2;
 
 import java.util.Scanner;
 

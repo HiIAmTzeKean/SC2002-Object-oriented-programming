@@ -1,4 +1,4 @@
-package sc2002_tut4;
+package tutorials.sc2002_tut4;
 
 public class Rectangle extends Polygon{
     public Rectangle () {

@@ -1,4 +1,4 @@
-package sc2002_tut3;
+package tutorials.sc2002_tut3;
 import java.util.Scanner;
 public class VendingMachine {
 	private Drink [] drinkArr = new Drink [3];
