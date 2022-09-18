@@ -1,3 +1,4 @@
+package sc2002_tut3;
 public class Drink {
 	private double cost;
 	private String name;

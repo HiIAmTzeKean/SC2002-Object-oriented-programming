@@ -1,3 +1,5 @@
+package sc2002_lab2;
+
 import java.util.Random;
 import java.util.Scanner; 
 public class Lab2p1 { 

@@ -1,6 +1,6 @@
 package sc2002_tut2;
-
 import java.util.Random;
+
 public class Dice {
 	private int valueOfDice;
 	public Dice () {
@@ -11,6 +11,8 @@ public class Dice {
 		Random r = new Random();
 		this.valueOfDice = r.nextInt(6)+1;
 		// or we can use the math class to generate random object
+		// this.valueOfDice = (int) Math.random()*5 + 1;
+
 	}
 	public int getDiceValue () {
 		return valueOfDice;

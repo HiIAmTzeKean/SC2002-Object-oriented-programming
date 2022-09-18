@@ -1,4 +1,4 @@
-
+package sc2002_tut3;
 
 public class Point {
 	protected int x;
