@@ -4,8 +4,8 @@ public class Sphere {
 	// Sphere is not a 2D shape
 	// Sphere has 2D properties
 	private Circle c = new Circle();
-	public Sphere(int radius) {
-		c.setRadius(radius);
+	public Sphere() {
+		c.setDimensions();
 	}
 	public double getSurfaceArea() {
 		return 4 * Math.PI * Math.pow(c.getRadius(),2);

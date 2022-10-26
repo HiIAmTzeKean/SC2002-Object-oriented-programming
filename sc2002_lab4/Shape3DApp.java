@@ -1,8 +1,7 @@
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Shape2DApp {
+public class Shape3DApp {
     public void Run(){
         Scanner sc = new Scanner(System.in);
 
@@ -16,34 +15,35 @@ public class Shape2DApp {
         return sc.nextInt();
     }
 
-    private ArrayList<Shape> CreateShapes(Scanner sc, int ListLength){
+    private ArrayList<Shape>  CreateShapes(Scanner sc, int ListLength){
         ArrayList<Shape> shapeList = new ArrayList<>();
 
         for(int i = 0; i < ListLength; i++){
             System.out.println("Choose your shape: ");
-            for(int j = 0; j < 4; j++){
-                System.out.printf("%d. %s\n",j+1, ShapeType.GetShapeByIndex(j).get().name());
-             }
+            for(int j = 4; j < ShapeType.values().length - 1; j++){
+                System.out.printf("%d. %s\n",j-3, ShapeType.GetShapeByIndex(j).get().name());
+            }
 
             // Input validation
             int selection = 0;
             while(true){
-                    selection = sc.nextInt();
-                    Shape newShape = null;
-                    switch(selection){
-                        case 1 -> { newShape = new Rectangle(); }
-                        case 2 -> { newShape = new Square(); }
-                        case 3 -> { newShape = new Circle(); }
-                        case 4 -> { newShape = new Triangle(); }
-                    }
+                selection = sc.nextInt();
+                Shape newShape = null;
+                switch(selection){
+                    case 1 -> { newShape = new Sphere(); }
+                    case 2 -> { newShape = new Pyramid(); }
+                    case 3 -> { newShape = new Cuboid(); }
+                    case 4 -> { newShape = new Cone(); }
+                    case 5 -> { newShape = new Cylinder(); }
+                }
 
-                    if(newShape != null){
-                        System.out.println("Enter the required dimension/s for the selected shape: ");
-                        newShape.EnterDimensions();
-                        System.out.println("Created new " + newShape.ShapeType.name());
-                        shapeList.add(newShape);
-                        break;
-                    }
+                if(newShape != null){
+                    System.out.println("Enter the required dimension/s for the selected shape: ");
+                    newShape.EnterDimensions();
+                    System.out.println("Created new " + newShape.ShapeType.name());
+                    shapeList.add(newShape);
+                    break;
+                }
 
 
                 System.out.println("Invalid selection! Please try again!");
@@ -56,8 +56,8 @@ public class Shape2DApp {
     private void CalculationSelection(Scanner sc, ArrayList<Shape> shapes){
         System.out.println("Choose the type of calculation: ");
         System.out.println("1. Calculate Area ");
-        System.out.println("2. Other ");
-        System.out.println("3. Other ");
+        System.out.println("2. todo ");
+        System.out.println("3. todo ");
         System.out.println("4. Quit ");
 
         // Input validation

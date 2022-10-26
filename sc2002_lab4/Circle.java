@@ -1,6 +1,8 @@
 package sc2002_lab4;
 
-public class Circle {
+import java.util.Scanner;
+
+public class Circle extends Shape {
 	private int radius;
 	public Circle(int radius){
 		this.radius = radius;
@@ -11,13 +13,18 @@ public class Circle {
 	public double getArea() {
 		return Math.PI * Math.pow(radius, 2);
 	}
-	public double getParameter() {
-		return 2 * Math.PI * radius;
-	}
 	public int getRadius() {
 		return radius;
 	}
-	public void setRadius(int radius) {
-		this.radius = radius;
+	public void setDimensions(){
+		Scanner s = new Scanner(System.in);
+		System.out.println("Input the Radius: ");
+		this.radius = s.nextInt();
+	}
+	public String getName(){
+		return "Circle";
+	}
+	public void print(){
+		System.out.printf("radius = %d\n",getRadius());
 	}
 }

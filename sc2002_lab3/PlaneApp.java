@@ -1,5 +1,6 @@
 package sc2002_lab3;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class PlaneApp {
@@ -18,8 +19,17 @@ public class PlaneApp {
 		System.out.println("(7) Exit");
 		
 		while (ans!=7) {
-			System.out.printf("Enter the number of your choice: ");
-			ans = sc.nextInt();
+			while(true) {
+				System.out.printf("Enter the number of your choice: ");
+				try {
+					ans = sc.nextInt();
+					break;
+				}
+				catch (InputMismatchException e) {
+					System.out.println("***Input must be a number");
+					sc.nextLine();
+				}
+			}
 			
 			switch (ans) {
 			case 1:
@@ -53,8 +63,6 @@ public class PlaneApp {
 				return;
 			}
 		}
-		
 		sc.close();
 	}
-
 }

@@ -11,7 +11,7 @@ class SalePerson implements Comparable<SalePerson> {
 		this.totalSales = totalSales;
 	}
 	public String toString() {
-		return lastName + firstName + ":" + totalSales;
+		return lastName + "," + firstName + ":" + totalSales;
 	}
 	public boolean equals(SalePerson o) {
 		if (o.getFirstName() == this.firstName &&

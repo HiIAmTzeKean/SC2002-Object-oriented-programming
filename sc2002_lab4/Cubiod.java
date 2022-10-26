@@ -1,14 +1,19 @@
 package sc2002_lab4;
 
-public class Cubiod {
+public class Cubiod extends Shape{
 	private Rectangle r = new Rectangle();
 	private int depth;
 	public Cubiod(int length, int breadth, int depth) {
-		r.setBreadth(breadth);
-		r.setLength(length);
+		r.EnterDimensions();
 		this.depth = depth;
 	}
-	public double getSurfaceArea() {
+	public double getArea() {
 		return r.getArea() * depth;
+	}
+	public void print(){
+		
+	}
+	public String getName(){
+		return "Cubiod";
 	}
 }

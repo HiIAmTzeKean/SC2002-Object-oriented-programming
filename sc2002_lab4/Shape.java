@@ -1,6 +1,9 @@
 package sc2002_lab4;
 
-public interface Shape {
+public abstract class Shape {
 	// Methods
-	public int getArea();
+	public abstract double getArea();
+	public abstract void print();
+	public abstract void setDimensions();
+	public abstract String getName();
 }
