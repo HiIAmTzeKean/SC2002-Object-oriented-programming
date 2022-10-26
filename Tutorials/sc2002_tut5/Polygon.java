@@ -1,4 +1,4 @@
-package tutorials.sc2002_tut4;
+package tutorials.sc2002_tut5;
 
 public class Polygon {
     public enum KindofPolygon {
@@ -37,4 +37,7 @@ public class Polygon {
     public void printWidthHeight() {
         System.out.println("Width = " + width + " Height = " + height);
     }
+//     public void printArea() {
+//         System.out.println("Area of " + this.name + " is: " + this.calArea());
+//    }
 }
