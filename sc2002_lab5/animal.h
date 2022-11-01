@@ -26,10 +26,12 @@ class Animal {
         string getName() {
             return _name;
         }
+
     private:
         string _name;
         COLOR _color;
 };
+
 
 class Mammal : public Animal {
     public:
@@ -42,12 +44,9 @@ class Mammal : public Animal {
     ~Mammal() {
         cout << "Destructing Mammal object " << Animal::getName() << endl;
     }
-    void speak() {
-        cout << "Mammal speaks" << endl;
-    }
     void move() {
             cout << "Animal moves" << endl;
-        }
+    }
     void eat() const {
         cout << "Mammal eat " << endl;
     }

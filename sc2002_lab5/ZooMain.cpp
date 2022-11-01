@@ -25,7 +25,7 @@ int main() {
     string name, owner, color;
     COLOR convertedColor;
     // Mammal array[3];
-    Mammal* array[3];
+    Mammal* array[50];
     
     while(answer!=5) {
         cout << "Select the animal to send to Zoo:" << endl;
